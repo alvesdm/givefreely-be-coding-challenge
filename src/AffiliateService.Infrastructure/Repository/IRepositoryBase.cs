@@ -2,13 +2,13 @@
 {
     public interface IRepositoryBase<T>
     {
-        Task<T> GetAsync(int id);
-        Task<T> GetAsync(Guid uniqueId);
-        Task<Tuple<IEnumerable<T>, int>> GetAsync(string criteria, int page, int pageSize);
+        Task<T> GetAsync(int id, CancellationToken cancellationToken = default);
+        Task<T> GetAsync(Guid uniqueId, CancellationToken cancellationToken = default);
+        Task<Tuple<IEnumerable<T>, int>> GetAsync(string criteria, int page, int pageSize, CancellationToken cancellationToken = default);
         IQueryable<T> Query();
-        Task<T> InsertAsync(T entity);
-        Task UpdateAsync(T entity, Guid uniqueId);
-        Task RemoveAsync(int id);
-        Task RemoveAsync(Guid uniqueId);
+        Task<T> InsertAsync(T entity, CancellationToken cancellationToken = default);
+        Task UpdateAsync(T entity, Guid uniqueId, CancellationToken cancellationToken = default);
+        Task RemoveAsync(int id, CancellationToken cancellationToken = default);
+        Task RemoveAsync(Guid uniqueId, CancellationToken cancellationToken = default);
     }
 }
