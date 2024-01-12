@@ -95,7 +95,7 @@ Again, just mentioning it here so that you know Im aware of the YAGNI principle,
     * Make sure the API is running
         * Make sure the API port is the same as in the 'appsettings.json' file located at 'tests\AffiliateService.Integration\AffiliateService.Api.Tests.Integration'
     * Can be done either from inside VS;
-        * The .sln file can be fond at 'tests\AffiliateService.Integration' directory;
+        * The .sln file can be found at 'tests\AffiliateService.Integration' directory;
     * Can alternativelly be done by opening a prompt/bash/whatever, making sure you are in the same directory level as 'tests\AffiliateService.Integration'
     and runing the following:
         ```
