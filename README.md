@@ -104,3 +104,5 @@ Again, just mentioning it here so that you know Im aware of the YAGNI principle,
         ```
         dotnet test
         ```
+
+Thanks and happy analysis ;)
