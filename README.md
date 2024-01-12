@@ -49,7 +49,7 @@ project, wouldn't make much sense, but in a bigger one, it's totallly needed to 
 
 * As for Unit Tests, the requirement was to have BL, edge cases and error conditions considered. Im not covering with unit tests 
 all classes and methods as this would extrapolate the purpose of this exercise which I believe is to show What, How, When I do things while coding.
-For that reason then, I have implemented a few unit tests, covering what was required in some classes and not in others.
+For that reason then, I have implemented a few unit tests, covering what was required in some classes and not in others. Same applies to Integration Tests.
 
 * On how the projects were split(0-Presnetantion, 1-Application, ...), I like having it so that we have a clear visual separation of the layers
 as well as giviging a logical separation(layer project, layer test projects, etc). Also, this helps with visually follow the clean architecture 
